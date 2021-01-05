@@ -2,3 +2,26 @@
     margin: 0;
     padding: 0;
 }
+
+.menu{
+    border: 5px solid #42D9C8;
+}
+
+.menu .menu-tabs{
+    border: 5px solid #acd942;
+}
+
+.menu-tabs, ul, li{
+    border: 5px solid #d942c5;
+    margin: 10px;
+}
+
+.portada-slide{
+    border: 5px solid #a10909;
+    height: 700px;
+}
+.portada-slide, .img{
+    background: url('../img/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

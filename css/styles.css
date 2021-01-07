@@ -1,4 +1,126 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #364958;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor{
+    margin: auto;
+    /*margin: 20px;*/
+    width: 90%;
+    max-width: 1400px;
+}
+
+/*ENCABEZADO*/
+header{
+    background: #9AD1D4;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header .logo a h2{
+    margin-left: 20px;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 18px;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/*CONTENEDOR*/
+.main{
+    /*border: 1px solid #000;*/
+    background: url(../img/portada.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    opacity: .8;
+}
+
+.portada {
+    height: 500px;
+    /*border: 1px solid #000;*/
+    display: flex;
+    align-items: center;
+    
+}
+
+.texto-portada-boton{
+    width: 50%;
+}
+
+.texto-portada-boton h1{
+    font-size: 80px;
+    color: #fefefe;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 5px 2px #000;
+}
+
+.texto-portada-boton p{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.texto-portada-boton button{
+    margin-top: 20px;
+    width: 40%;
+    font-size: 30px;
+    background:#9AD1D4;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.texto-portada-boton button:hover{
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+/*CONTENEDOR*/
+
+/*FOOTER*/
+footer{
+    margin: 20px 0;
+    background: rgba(255,255,255, .2);
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+footer .redes-sociales a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
 }

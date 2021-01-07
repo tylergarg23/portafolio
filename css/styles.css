@@ -65,7 +65,10 @@ header .menu a:hover {
     height: 500px;
     /*border: 1px solid #000;*/
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: left;
+
     
 }
 
@@ -87,7 +90,7 @@ header .menu a:hover {
     text-shadow: 1px 1px 1px #000;
 }
 
-.texto-portada-boton button{
+.boton-contact, button{
     margin-top: 20px;
     width: 40%;
     font-size: 30px;
@@ -98,8 +101,8 @@ header .menu a:hover {
     text-transform: uppercase;
 }
 
-.texto-portada-boton button:hover{
-    border: 1px solid #fff;
+.boton-contact, button:hover{
+    /*border: 1px solid #fff;*/
     background: transparent;
     color: #fff;
 }

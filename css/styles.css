@@ -55,13 +55,15 @@ header{
 }
 
 .encabezado .menu a:hover{
-    border-bottom: 2px solid #fff;
+    color: #FFD639;
+    border-bottom: 2px solid #FFD639;
 }
 
 header .contenedor-texto{
     margin: 190px 0;
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 header .contenedor-texto .texto{
@@ -88,4 +90,147 @@ header .contenedor-texto .texto .nombre{
 header .contenedor-texto .texto .profesion{
     font-size: 25px;
     line-height: 50px;
+}
+
+/*** MAIN ***/
+.main .contenedor{
+    overflow: visible;
+}
+
+.main .acerca-de{
+    text-align: center;
+}
+
+.main .acerca-de .foto{
+    margin-top: -60px;
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.2);
+}
+
+.main .acerca-de .texto{
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 50px auto;
+}
+
+.main .acerca-de .texto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #FFD639;
+    text-align: center;
+}
+
+.main .acerca-de .texto .bold{
+    color: #3895ea;
+    text-decoration: underline;
+}
+
+.main .acerca-de .boton-cv{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main .acerca-de .boton-cv a{
+    background:#3895ea;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 4px 3px 5px rgb(196, 151, 28);
+}
+
+.main .acerca-de .boton-cv a:hover{
+    background: rgba(30, 124, 233, 0.6)
+}
+
+/*** MAIN TRABAJOS ***/
+
+.main .trabajos{
+    background: #f2f2f2;
+    padding: 40px 0;
+}
+
+.main .trabajos .contenedor{
+    /*overflow: hidden;*/
+}
+
+.main .trabajos .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #323068;
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo{
+    width: 48%;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img{
+    width: 100%;
+    vertical-align: top;
+    opacity: .8;
+    cursor: pointer;
+    box-shadow: 4px 5px 8px #000;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img:hover{
+    opacity: 1;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre{
+    color: #3895ea;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
+    font-size: 14px;
+    color: #636363;
+}
+
+/*** MAIN SKILLS ***/
+
+.main .skills .texto{
+    color: #FFD639;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 60px auto 50px auto;
+}
+
+.main .skills .texto .titulo{
+    font-size: 34px;
 }

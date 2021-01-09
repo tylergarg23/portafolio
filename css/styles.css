@@ -222,15 +222,174 @@ header .contenedor-texto .texto .profesion{
 
 /*** MAIN SKILLS ***/
 
-.main .skills .texto{
-    color: #FFD639;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 30px;
-    width: 80%;
-    margin: 60px auto 50px auto;
+.main .skills{
+    background: #fff;
+    padding: 40px 0;
 }
 
-.main .skills .texto .titulo{
+/*.main .skills .contenedor{
+    overflow: hidden;
+}*/
+
+.main .skills .titulo{
     font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #FFD639;
+    text-align: center;
+}
+
+.main .skills .contenedor-skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.main .skills .contenedor-skills .skill{
+    width: 22%;
+    margin-bottom: 40px;
+    /*border: 1px solid #000;*/
+}
+
+.main .skills .contenedor-skills .skill img{
+    width: 100%;
+    border-radius: 50px;
+    vertical-align: top;
+    padding: 20px;
+}
+
+/*** FOOTER ***/
+
+footer .contacto{
+    background: #f2f2f2;
+    padding: 40px 0;
+}
+
+footer .contacto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #323068;
+    text-align: center;
+}
+
+footer .contacto .formulario-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+footer .contacto .formulario-img .formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+footer .contacto .formulario-img .formulario input[type="text"],
+footer .contacto .formulario-img .formulario input[type="email"],
+footer .contacto .formulario-img .formulario textarea{
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contacto .formulario-img .formulario input[type="text"]:focus,
+footer .contacto .formulario-img .formulario input[type="email"]:focus,
+footer .contacto .formulario-img .formulario textarea:focus{
+    border: 2px solid #3895EA;
+    outline: none;
+}
+
+footer .contacto .formulario-img .formulario textarea{
+    width: 50%;
+    height: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 100%;
+    min-height: 100px;
+}
+
+footer .contacto .formulario-img .formulario .boton-form{
+    margin: 25px auto;
+    background: #3895EA;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+footer .contacto .formulario-img .formulario .boton-form:focus{
+    outline:none;
+}
+
+footer .contacto .formulario-img .formulario .boton-form:hover{
+    background: #387bea;
+}
+
+footer .contacto .formulario-img .img-contacto{
+    /*border: 2px solid #000;*/
+    padding: auto;
+    width: 100%;
+}
+
+footer .contacto .img-contacto img{
+    width: 100%;
+    align-items: center;
+    padding: 25px 0;
+}
+
+/*** FOOTER REDES SOCIALES ***/
+
+footer .redes-sociales{
+    background: #1e2b38;
+    padding: 40px 0;
+}
+
+footer .redes-sociales .contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    justify-content:space-between;
+    align-items: center;
+}
+
+footer .redes-sociales .texto{
+    color: #fff;
+    font-size: 17px;
+}
+
+footer .redes-sociales .social a{
+    color: #fff;
+    text-align: center;
+    margin: 0 40px;
+    width: 100%;
+    font-size: 30px;
+}
+
+footer .redes-sociales .social .facebook:hover{
+    color: #3b5998;
+}
+
+footer .redes-sociales .social .whatsapp:hover{
+    color: #25d366;
+}
+
+footer .redes-sociales .social .twitter:hover{
+    color: #1da1f2;
+}
+
+footer .redes-sociales .social .linkedin:hover{
+    color: #0077b5;
 }

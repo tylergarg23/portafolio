@@ -368,6 +368,7 @@ footer .redes-sociales .contenedor{
 footer .redes-sociales .texto{
     color: #fff;
     font-size: 17px;
+    margin-left: 40px;
 }
 
 footer .redes-sociales .social a{
@@ -392,4 +393,31 @@ footer .redes-sociales .social .twitter:hover{
 
 footer .redes-sociales .social .linkedin:hover{
     color: #0077b5;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (max-width: 725px){
+    header .encabezado{
+        display: block;
+        text-align: center;
+    }
+
+    header .encabezado .logo{
+        margin-bottom: 20px;
+    }
+
+    footer .contacto .formulario-img .img-contacto{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer .redes-sociales .contenedor {
+        display: block;
+        text-align: center;
+    }
+
+    footer .redes-sociales .contenedor .texto{
+        margin-left: 0;
+    }
 }

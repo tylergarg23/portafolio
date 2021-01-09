@@ -349,7 +349,7 @@ footer .contacto .img-contacto img{
     padding: 25px 0;
 }
 
-/*** FOOTER REDES SOCIALES ***/
+/*** FOOTER ***/
 
 footer .redes-sociales{
     background: #1e2b38;
@@ -365,12 +365,14 @@ footer .redes-sociales .contenedor{
     align-items: center;
 }
 
+/*** TEXTO COPY RIGTH ***/
 footer .redes-sociales .texto{
     color: #fff;
     font-size: 17px;
     margin-left: 40px;
 }
 
+/*** FOOTER REDES SOCIALES***/
 footer .redes-sociales .social a{
     color: #fff;
     text-align: center;

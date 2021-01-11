@@ -451,7 +451,9 @@ footer .redes-sociales .social .linkedin:hover{
     text-align: center;
     width: 700px;
 
-
+    opacity: 0;
+    transition: .3s ease all;
+    transform: scale(.7);
 }
 
 .overlay .popup .btn-cerrar-popup{
@@ -472,12 +474,14 @@ footer .redes-sociales .social .linkedin:hover{
     font-weight: 600;
     margin: 10px 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .4) ;
+    opacity: 0;
 }
 
 .overlay .popup h5{
     font-size: 18px;
     font-weight: 300;
     margin: 10px 0;
+    opacity: 0;
 }
 
 .overlay .popup .img-popup{
@@ -507,4 +511,39 @@ footer .redes-sociales .social .linkedin:hover{
 .overlay .popup .descripcion-empresa{
     margin: 10px 0 10px 0;
     font-size: 14px;
+}
+
+.popup.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup.active h3 {
+    animation: entradaTitulo 1s ease .4s forwards;
+}
+
+.popup.active h5 {
+    animation: entradaSubtitulo 1s ease .4s forwards;
+}
+
+@keyframes entradaTitulo{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo{
+    from{
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
